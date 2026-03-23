@@ -980,7 +980,7 @@ export default function Home() {
 
           <div className="mt-10 grid gap-4 sm:grid-cols-2 md:grid-cols-6 lg:grid-cols-6">
             {tiles.map((tile) => {
-              const size = tile.size ?? (tile.featured ? "hero" : "normal");
+              const size = tile.size ?? "normal";
               const spanClass =
                 size === "hero"
                   ? "sm:col-span-2 md:col-span-6 lg:col-span-3"
